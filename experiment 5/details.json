@@ -1,0 +1,51 @@
+{
+
+   "details": [
+       {
+			"Experiment": "Class, Methods and Object",
+			"Lab": "Java Programming Lab",
+			"Discipline": "Information Technology",
+			"Technology": "Java"
+       }
+   ],
+
+   "developer": [
+       {
+      "Developer": "",
+      "Institute": "Acropolis Institute of Technology and Research",
+      "InstituteAcronym": "AITR"
+       }
+   ],
+
+   "contributer": [
+       {
+			"Contributer": "Aditya Chouhan",
+      "Institute": "Acropolis Institute of Technology and Research",
+			"InstituteAcronym": "AITR"
+       },
+
+       {
+			"Contributer": "Atik Raiwal",
+      "Institute": "Acropolis Institute of Technology and Research",
+			"InstituteAcronym": "AITR"
+       },
+
+       {
+			"Contributer": "Alakmar Shafin",
+      "Institute": "Acropolis Institute of Technology and Research",
+			"InstituteAcronym": "AITR"
+       },
+
+       {
+			"Contributer": "Aadarsh Laad",
+      "Institute": "Acropolis Institute of Technology and Research",
+			"InstituteAcronym": "AITR"
+    },
+    {
+   "Contributer": "Gourav Parwal",
+   "Institute": "Acropolis Institute of Technology and Research",
+   "InstituteAcronym": "AITR"
+    }
+   ]
+
+}

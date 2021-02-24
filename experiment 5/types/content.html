@@ -1,0 +1,131 @@
+<html>
+<body>
+ <div>
+            <br><br>
+            <div id=1 onclick="manualrun(18,1)">class Method</div>
+            <div id=2 onclick="manualrun(18,2)">&nbsp; {</div>
+		  <div id=3 onclick="manualrun(18,3)">&ensp; void MyFirstFun()</div>
+		  <div id=4 onclick="manualrun(18,4)">&ensp;&nbsp;{</div>
+		  <div id=5 onclick="manualrun(18,5)">&ensp;&ensp;System.out.println("Method is called");</div>
+		  <div id=6 onclick="manualrun(18,6)">&ensp;&nbsp;}</div>
+		  <div id=7 onclick="manualrun(18,7)">&ensp; static void MyFirstFun1()</div>
+		  <div id=8 onclick="manualrun(18,8)">&ensp;&nbsp;{</div>
+		  <div id=9 onclick="manualrun(18,9)">&ensp;&ensp;System.out.println("Static Method is called");</div>
+		  <div id=10 onclick="manualrun(18,10)">&ensp;&nbsp;}</div>		  
+            <div id=11 onclick="manualrun(18,11)">&ensp; public static void main (&nbsp;String &nbsp;args&nbsp; [ ] )</div>
+            <div id=12 onclick="manualrun(18,12)">&ensp;&nbsp; {</div>
+            <div id=13 onclick="manualrun(18,13)">&ensp;&ensp; // &nbsp;MyFirstFun();</div>
+            <div id=14 onclick="manualrun(18,14)">&ensp;&ensp; Method obj = new Method(); </div>
+            <div id=15 onclick="manualrun(18,15)">&ensp;&ensp; obj.&nbsp;MyFirstFun();</div>
+            <div id=16 onclick="manualrun(18,16)">&ensp;&ensp;  MyFirstFun1();</div>
+            <div id=17 onclick="manualrun(18,17)"> &ensp; } </div>
+            <div id=18 onclick="manualrun(18,18)"> } ;</div>
+		var content = [
+		'class Method',
+		'{',
+ 'void MyFirstFun()',
+ '{',
+'System.out.println("Method is called");',
+ '}',
+ 'static void MyFirstFun1()',
+ '{',
+'System.out.println("Static Method is called");',
+ '}',
+ 'public static void main ( String  args  [ ] )',
+  '{',
+ '//  MyFirstFun();',
+ 'Method obj = new Method(); ',
+'obj. MyFirstFun();',
+ 'MyFirstFun1();',
+ '} ',
+'} ;'
+		];
+		
+		
+		 var content2 = ['class "Method" is created', 
+		'Class block started', 
+		
+		
+		'The main function is created', 
+		'Function block is started',
+		
+		
+		'Main function is closed',
+		'Class is closed'];
+           
+ </div>
+ <div>
+           <br><br>
+            <div id=1 onclick="manualrun(18,1)">class MethodType</div>
+            <div id=2 onclick="manualrun(18,2)">&nbsp; {</div>
+		  <div id=3 onclick="manualrun(18,3)">&ensp; void My_Fun_1()&nbsp;{</div>
+		  <div id=4 onclick="manualrun(18,4)">&ensp;&ensp;System.out.println("Method is called");</div>
+		  <div id=5 onclick="manualrun(18,5)">&ensp;&nbsp;}</div>
+		  <div id=6 onclick="manualrun(18,6)">&ensp; void My_Fun_2(&nbsp;int a,&nbsp;String b&nbsp;)&nbsp;{</div>
+		  <div id=7 onclick="manualrun(18,7)">&ensp;&ensp;System.out.println("First parameter =+"a+",Second Parameter =+"+b);</div>
+		  <div id=8 onclick="manualrun(18,8)">&ensp;&nbsp;}</div>		  
+		  <div id=9 onclick="manualrun(18,9)">&ensp; int My_Fun_3()&nbsp;{</div>
+		  <div id=10 onclick="manualrun(18,10)">&ensp;&ensp;return 100;</div>
+		  <div id=11 onclick="manualrun(18,11)">&ensp;&nbsp;}</div>
+		  <div id=12 onclick="manualrun(18,12)">&ensp; String My_Fun_4(&nbsp;String a,&nbsp;String b&nbsp;)&nbsp;{</div>
+		  <div id=13 onclick="manualrun(18,13)">&ensp;&ensp;return &nbsp; (a+" "+b);</div>
+		  <div id=14 onclick="manualrun(18,14)">&ensp;&nbsp;}</div>
+            <div id=15 onclick="manualrun(18,15)">&ensp; public static void main (&nbsp;String &nbsp;args&nbsp; [ ] )</div>
+            <div id=16 onclick="manualrun(18,16)">&ensp;&nbsp; {</div>
+            <div id=17 onclick="manualrun(18,17)">&ensp;&ensp; MethodType obj = new Method(); </div>
+            <div id=18 onclick="manualrun(18,18)">&ensp;&ensp; obj.&nbsp;My_Fun_1();</div>
+           <div id=19 onclick="manualrun(18,19)">&ensp;&ensp; obj.&nbsp;My_Fun_2(100,"MyString");</div>
+		 <div id=20 onclick="manualrun(18,20)">&ensp;&ensp; int My_int = Obj.&nbsp;My_Fun_3;</div>	 	  <div id=21 onclick="manualrun(18,15)">&ensp;&ensp; System.out.println(My_int);</div>
+		 <div id=21 onclick="manualrun(18,21)">&ensp;&ensp; String My_str = Obj.&nbsp;My_Fun_4;</div>
+	      <div id=22 onclick="manualrun(18,22)">&ensp;&ensp; System.out.println(My_str);</div>
+           <div id=23 onclick="manualrun(18,23)"> &ensp; } </div>
+           <div id=24 onclick="manualrun(18,24)"> } ;</div>
+		   
+content = [
+'class MethodType',
+ ' {',
+'void My_Fun_1() {',
+'System.out.println("Method is called");',
+'}',
+'void My_Fun_2( int a, String b ) {',
+'System.out.println("First parameter =+"a+",Second Parameter =+"+b);',
+'}',
+'int My_Fun_3() {',
+'return 100;',
+'}',
+'String My_Fun_4( String a, String b ) {',
+'return   (a+" "+b);',
+'}',
+'public static void main ( String  args  [ ] )',
+ '{',
+ 'MethodType obj = new Method(); ',
+ 'obj. My_Fun_1();',
+ 'obj. My_Fun_2(100,"MyString");',
+ 'int My_int = Obj. My_Fun_3;',
+ 'System.out.println(My_int);',
+' String My_str = Obj. My_Fun_4;',
+ 'System.out.println(My_str);',
+'} ',
+'} ;'
+];
+  
+  
+  
+  var content2 = ['class "MethodType" is created', 
+		'Class block started', 		
+		'The main function is created', 
+		'Function block is started',
+		
+		'Main function is closed',
+		'Class is closed']; 
+ </div>
+ 
+ <div>
+ 
+ 
+ 
+ 
+ </div>
+ </body>
+ </html>
+

@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Simulation of Java</title>
+
+    <link rel="stylesheet" type="text/css" href="css/simulation.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:#2e3240;" >
+
+    <div class="code dark-mode" style="overflow:auto;">
+        <div class="heading">
+            Program
+        </div>
+		
+        <div id="codes" style=" color: white; font-size: 21px; font-weight: bold;">
+          <div id=1 onclick="manualrun(25,1)">class MethodType</div>
+          <div id=2 onclick="manualrun(25,2)">&nbsp; { </div>
+		  <div id=7 onclick="manualrun(25,7)">&ensp; void My_Fun_1(&nbsp;)&nbsp; {</div>
+		  <div id=8 onclick="manualrun(25,8)">&ensp;&ensp;&nbsp; System.out.println ("Method &nbsp; is &nbsp; called");</div>
+		  <div id=9 onclick="manualrun(25,9)">&ensp;&nbsp; }</div>
+		  <div id=11 onclick="manualrun(25,11)">&ensp; void My_Fun_2(&nbsp;int &nbsp; a &nbsp;,&nbsp;String &nbsp; b&nbsp;)&nbsp; {</div>
+		  <div id=12 onclick="manualrun(25,12)"> &ensp;&ensp; System.out.println ( "First &nbsp; parameter &nbsp; =&nbsp; "+a <br>+ &ensp; &ensp; " &nbsp; Second &nbsp; Parameter ="+ b ); </div>
+		  <div id=13 onclick="manualrun(25,13)">&ensp;&nbsp; }</div>		  
+		  <div id=15 onclick="manualrun(25,15)">&ensp; int My_Fun_3(&nbsp;)&nbsp; {</div>
+		  <div id=16 onclick="manualrun(25,16)">&ensp;&ensp;&nbsp; return  &nbsp; 100 &nbsp; ;</div>
+		  <div id=17 onclick="manualrun(25,17)">&ensp;&nbsp; }</div>
+		  <div id=20 onclick="manualrun(25,20)">&ensp; String My_Fun_4(&nbsp;String &nbsp; a,&nbsp;String &nbsp; b&nbsp;)&nbsp; {</div>
+		  <div id=21 onclick="manualrun(25,21)">&ensp;&ensp;&nbsp; return &nbsp; (&nbsp; a+"&nbsp; "+b&nbsp;)&nbsp; ;</div>
+		  <div id=22 onclick="manualrun(25,22)">&ensp;&nbsp; }</div>
+            <div id=3 onclick="manualrun(25,3)">&ensp; public static void main (&nbsp;String &nbsp;args&nbsp; [ ] )</div>
+            <div id=4 onclick="manualrun(25,4)">&ensp;&nbsp; {</div>
+            <div id=5 onclick="manualrun(25,5)">&ensp;&ensp; MethodType &nbsp; obj = new &nbsp; MethodType(&nbsp;); </div>
+            <div id=6 onclick="manualrun(25,6)">&ensp;&ensp; obj.&nbsp;My_Fun_1(&nbsp;);</div>
+           <div id=10 onclick="manualrun(25,10)">&ensp;&ensp; obj.&nbsp;My_Fun_2(100&nbsp;,&nbsp; "MyString");</div>
+		 <div id=14 onclick="manualrun(25,14)">&ensp;&ensp; int &nbsp; My_int&nbsp;  = &nbsp;  obj.&nbsp;My_Fun_3( &nbsp; );</div>	 
+        <div id=18 onclick="manualrun(25,18)">&ensp;&ensp; System.out.println (&nbsp;My_int&nbsp;);</div>
+		 <div id=19 onclick="manualrun(25,19)">&ensp;&ensp; String My_str &nbsp;= obj.&nbsp;My_Fun_4("Hello","User");</div>
+	      <div id=23 onclick="manualrun(25,23)">&ensp;&ensp; System.out.println (&nbsp;My_str&nbsp;);</div>
+           <div id=24 onclick="manualrun(25,24)"> &ensp; } </div>
+           <div id=25 onclick="manualrun(25,25)"> } &nbsp;;</div>
+            <div id=26></div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="input-group divbutton dark-mode" style="left:1.5%;width:38%;">
+        <input type="text" class="form-control" id="input_bar" placeholder="Input for Program" aria-label="Input for Program" aria-describedby="Input for Program">
+        <div class="input-group-append">
+            <button id="submit_btn" onclickk="runcode2()" class="btn btn-outline-secondary" style="font-weight:bold;color:white;" onclick="output()" type="button">Submit</button>
+            <button id="prev" class="btn btn-outline-secondary" style="font-weight:bold;color:white;" onclick="prev(25)" type="button">Prev</button>
+            <button id="next" class="btn btn-outline-secondary" style="font-weight:bold;color:white;" onclick="next(25)" type="button">Next</button>
+
+            <!--BUTTON IS HERE-->
+            <button type="button" id="run" onclick="runcode(26);" style="font-weight:bold;color:white;" class="btn btn-outline-success">Run</button>
+        </div>
+    </div>
+
+   <div class="right_side">
+        <div class="process dark-mode ">
+            <div class="heading">Process</div>
+            <div id="process" style="text-align:center;font-weight:bold;font-size:30px;position:relative;top:20%;"> </div>
+            <div id="process2" style="color:FFB200;text-align:center;font-size:24px;position:relative;top:25%;"></div>
+
+
+        </div>
+	
+        <div class="explanation dark-mode" id="dynamicDiv">
+            <div class="heading">
+                Explanation
+            </div>
+			
+            <div id="explain"  style="text-align:center;font-weight:bold;font-size:29px;position:relative;">
+			</div>
+
+        </div>
+
+
+        <div class="output dark-mode">
+
+            <div class="heading">
+                Output
+            </div>
+            <div id="output" style="text-align:center;font-weight:bold;font-size:30px;position:relative;top:20%;"></div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
